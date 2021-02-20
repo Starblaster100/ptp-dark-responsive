@@ -1,0 +1,29 @@
+{
+  "name": "ptp-responsive",
+  "version": "1.0.0",
+  "description": "Responsive css for themes on PTP",
+  "main": "main.css",
+  "scripts": {
+    "watch": "node-sass -w ./src -o ./dist",
+    "debug": "node-sass ./src -o ./dist",
+    "build": "node-sass --output-style compressed ./src -o ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Starblaster100/ptp-responsive.git"
+  },
+  "keywords": [
+    "responsive",
+    "css",
+    "ptp"
+  ],
+  "author": "Starblaster100",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Starblaster100/ptp-responsive/issues"
+  },
+  "homepage": "https://github.com/Starblaster100/ptp-responsive#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
