@@ -23,5 +23,5 @@ app.get('/', (req, res) => {
 const server = https.createServer(options, app);
 server.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log('server starting on port: 3000');
+  console.log('server starting: https://localhost:3000');
 });

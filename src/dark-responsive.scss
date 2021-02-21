@@ -98,6 +98,12 @@
     }
   }
 
+  // enable scrolling on panels over a certain height
+  .panel {
+    max-height: 450px;
+    overflow: scroll;
+  }
+
   .footer {
     margin: 10px 0;
 
@@ -136,12 +142,16 @@
         margin-right: 5px;
       }
     }
+
+    > h3 {
+      display: none;
+    }
   }
 
   // fit images to the viewport
   .bbcode {
     &__image {
-      max-width: 100%;
+      max-width: #{'min(100%, 500px)'};
     }
   }
 
@@ -172,6 +182,14 @@
 
       &__cover-link {
         margin: 0 auto;
+      }
+    }
+
+    // fix movie posters on collections page
+    &--narrow {
+      > .cover-movie-list__movie {
+        width: auto;
+        margin: 0;
       }
     }
   }
@@ -403,12 +421,6 @@
     &__item {
       padding: 5px 3px;
     }
-  }
-
-  // enable scrolling on panels over a certain height
-  .panel {
-    max-height: 450px;
-    overflow: scroll;
   }
 
   //

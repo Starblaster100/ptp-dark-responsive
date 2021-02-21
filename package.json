@@ -9,7 +9,7 @@
     "sass:build": "node-sass --output-style compressed ./src -o ./dist",
     "eslint": "eslint .",
     "eslint:fix": "eslint . --fix",
-    "stylelint": "stylelint src/**/*.scss"
+    "stylelint": "stylelint src/**/*.scss",
     "stylelint:fix": "stylelint src/**/*.scss --fix"
   },
   "repository": {
