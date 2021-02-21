@@ -4,9 +4,11 @@
   "description": "Responsive css for themes on PTP",
   "main": "main.css",
   "scripts": {
-    "watch": "node-sass -w ./src -o ./dist",
-    "debug": "node-sass ./src -o ./dist",
-    "build": "node-sass --output-style compressed ./src -o ./dist"
+    "sass:watch": "node-sass -w ./src -o ./dist",
+    "sass:debug": "node-sass ./src -o ./dist",
+    "sass:build": "node-sass --output-style compressed ./src -o ./dist",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -24,8 +26,14 @@
   },
   "homepage": "https://github.com/Starblaster100/ptp-responsive#readme",
   "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
     "express": "^4.17.1",
     "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
     "webpack-dev-server": "^3.11.2"
   }
 }

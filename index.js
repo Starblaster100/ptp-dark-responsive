@@ -1,5 +1,7 @@
 const https = require('https');
+// eslint-disable-next-line import/no-extraneous-dependencies
 const express = require('express');
+// eslint-disable-next-line import/no-extraneous-dependencies
 const getCertificate = require('webpack-dev-server/lib/utils/getCertificate');
 
 const app = express();
